@@ -1,0 +1,432 @@
+body {
+margin: 0;
+padding: 0;
+font-family: 'Carrois Gothic', sans-serif;
+background-color: #000;
+}
+
+body p{
+font-family: 'Carrois Gothic', sans-serif;
+color: #fff;
+font-size: 11px;
+}
+
+body p a {
+	text-decoration: none;
+	color: #5f5d84;
+	font-weight: bold;
+}
+
+#map { 
+position: absolute;
+height: 500px; 
+top: 125px;
+padding: 0;
+
+width:100%; 
+}
+
+#header {
+	position: fixed;
+	width: 102%;
+	margin: 0; padding: 0;
+	height: 75px;
+	left: -20px;
+	top: -10px;
+	background-color: #4c4c4c;
+	z-index: 110;
+}
+
+#header p {
+	color: #FFF;
+	font-size: 40px;
+	margin-top: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+
+}
+
+#title {
+	position: absolute;
+	margin: 0 auto;
+	height: 30px;
+	top: 10px;
+}
+
+#subtitle {
+	width: 102%;
+	top: 35px;
+	left: -20px;
+	margin: 0;padding: 0;
+	position: fixed;
+	z-index: 110;
+}
+#subtitle  p{
+	color: #FFF;
+	font-size: 12px;
+	font-family: 'Carrois Gothic', sans-serif;
+	font-weight: normal;
+	text-align: center;
+	z-index: 110;
+
+}
+
+#menuBar {
+	position: fixed;
+	width: 102%;
+	margin: 0; padding: 0;
+	height: 25px;
+	top: 65px;
+	left: -20px;
+	background-color: #000;
+	z-index: 110;
+	border-bottom: 0.5px solid #5698D0;
+}
+
+#menuBar a {
+	text-decoration: none;
+	color: #fff;
+	margin-left: 25px;
+	margin-right: 25px;
+
+	font-family: 'Carrois Gothic', sans-serif;;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#menuBarLinks {
+	margin-top: 3px;
+}
+
+#menuBar a:hover {
+	color: #5f5d84;
+}
+
+#menuBar a:active {
+	color: #5f5d84;
+}
+
+.map-tooltip {
+font-family: 'Carrois Gothic', sans-serif;
+background-color: #ccc;
+right: 20px;
+}
+
+
+
+/*#map-ui-type {
+	border-collapse: true;
+	top: 100px;
+	left: 80px;
+	position: absolute;
+	z-index: 99;
+	
+}
+
+#map-ui-type td {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #FFF;
+	border: 1px solid #BBB;
+	padding: 5px;
+}
+
+#map-ui-type td:hover { background:#ECF5FA; }*/
+
+#map-ui {
+    position:absolute;
+    top:80px;
+	left:50%;
+	margin-left:-340px;
+    list-style:none;
+    padding:0;
+    z-index:100;
+    }
+    #map-ui a {
+      font:bold 15px/18px 'Source Sans Pro', sans-serif;
+      background:#000;
+      color:#fff;
+      display:inline;
+      margin:0;padding:0;
+      border-bottom-width:1px;
+      -webkit-border-radius:5px;
+              border-radius:5px;
+      min-width:20px;
+      padding:3px 10px 3px 10px;
+      text-decoration:none;
+      }
+	#map-ui li {
+		display: inline;
+		list-style-type: none;
+	}
+    #map-ui a:hover { background:#888; }
+    /*#map-ui li:last-child a {
+      border-bottom-width:1px;
+      -webkit-border-radius:0 ;
+              border-radius:0 ;
+      }
+    #map-ui li:first-child a {
+      -webkit-border-radius: 0;
+              border-radius:0;
+            }*/
+    #map-ui a.active {
+      background:#5f5d84;
+      /*border-color:#5698D0;
+      border-top-color:#BBB;*/
+      color:#FFF;
+      }
+	  
+	  #map-ui-easing {
+    position:absolute;
+    top:170px;left:-5px;
+    list-style:none;
+    margin:0;padding:0;
+    z-index:100;
+    }
+    #map-ui-easing a {
+      font:bold 11px/18px 'Source Sans Pro', sans-serif;
+      background:#000;
+      color:#fff;
+      display:block;
+      margin: 5px 0 5px 0;padding:0;
+	  border-bottom-width:1px;
+      -webkit-border-radius:0 5px 5px 0;
+              border-radius:0 5px 5px 0;
+      /*border:1px solid #BBB;
+      border-bottom-width:0;*/
+      width:80px;
+      padding:10px 10px 10px 20px;
+      text-decoration:none;
+      }
+    #map-ui-easing a:hover { background:#888; }
+	
+    /*#map-ui-easing li:last-child a {
+      border-bottom-width:1px;
+      -webkit-border-radius:0 0 3px 3px;
+              border-radius:0 0 3px 3px;
+      }
+    #map-ui-easing li:first-child a {
+      -webkit-border-radius:3px 3px 0 0;
+              border-radius:3px 3px 0 0;*/
+            }
+    #map-ui-easing a.active {
+      background:#5f5d84;
+      border-color:#5698D0;
+      border-top-color:#BBB;
+      color:#FFF;
+      }
+	  
+
+	
+	.pageTitle {
+	top: 100px;
+	position: relative;
+	display: block;
+	color: #FFF;
+	font-size: 35px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	padding-bottom: 40px;
+	}
+
+	#story {
+		left: 10%;
+		margin-bottom: 30px;
+		margin-top: 60px;
+		position: relative;
+		display: inline-block;
+		float: left;
+		clear: both;
+		width: 80%;
+		color: #fff;
+		font-size: 15px;
+		line-height: 20px;
+		
+	}
+	
+	#story p {
+	font-family: 'Carrois Gothic', sans-serif;
+		color: #fff;
+		font-size: 15px;
+	  }
+	  
+	.intro {
+		font-size: 28px;
+	}
+	  
+	#HCDeathsInSectarianAttacks {
+		
+		display: inline-block;
+		position: relative;
+		float: left;
+		clear: both;
+		left: 10%;
+		width: 80%;
+		height:250px;
+	
+	} 
+	  
+	#HCNumberOfSectarianAttacks {
+		
+		display: inline-block;
+		position: relative;
+		float: left;
+		clear: both;
+		left: 10%;
+		width: 80%;
+		height:300px;
+
+	}
+	 
+	  #HCTargetKillingsInKarachi {
+		
+		display: inline-block;
+		position: relative;
+		float: left;
+		clear: both;
+		left: 10%;
+		width: 80%;
+		height: 300px;
+	
+	 }
+	 
+	 #HCDeathsInQuetta{
+		
+		display: inline-block;
+		position: relative;
+		float: left;
+		clear: both;
+		left: 10%;
+		width: 80%;
+		height:350px;
+		margin-bottom: 20px;
+	 }
+	 
+	 	/*#story3 {
+		top: 1450px;
+		left: 5%;
+		position: absolute;
+		width: 25%;
+		color: #fff;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	
+	#story3 p {
+	font-family: 'Carrois Gothic', sans-serif;
+		color: #fff;
+		font-size: 15px;
+	  }*/
+	  
+	
+	 
+	 	/*#story4 {
+		top: 1800px;
+		left: 70%;
+		position: absolute;
+		width: 25%;
+		color: #fff;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	
+	#story4 p {
+	font-family: 'Carrois Gothic', sans-serif;
+		color: #fff;
+		font-size: 15px;
+	  }*/
+	  
+	 #dataAbout {
+
+		padding-top: 60px;
+		width: 80%;
+		left: 10%;
+		position: relative;
+		display: block;
+	}
+		
+	#dataAbout p {
+		font-family: 'Carrois Gothic', sans-serif;
+		color: #fff;
+		font-size: 15px;
+	}
+	 
+	#downloadIcon {
+		clear: both;
+		position: relative;
+		display: block;
+		width: 150px;
+		left: 10%;
+		padding-bottom: 80px;
+	}
+	 
+	.teamHeading {
+		font-family: 'Source Sans Pro', sans-serif;
+		color: #fff;
+		padding-left: 10%;
+		display: block;
+		clear: both;
+		font-size: 30px;
+		padding-top: 30px;
+	}
+	 
+	.teamName {
+		float: left;
+		clear: both;
+		font-family: 'Source Sans Pro', sans-serif;
+		color: #fff;
+		font-size: 25px;
+		margin: 0;padding: 0;
+	}
+
+	.teamTitle {
+		float: left;
+		clear: both;
+		font-family: 'Carrois Gothic', sans-serif;
+		color: #fff;
+		font-size: 20px;
+		margin-top:  3px;
+
+	}
+	
+	.teamText {
+		float: left;
+		clear: both;
+		font-family: 'Carrois Gothic', sans-serif;
+		color: #fff;
+		font-size: 15px;
+		margin: 0;padding: 0;
+
+	}
+	
+	.teamMemberWrapper {
+		float: left;
+		clear: both;
+		position: relative;
+		display: block;
+		left: 10%;
+		width: 350px;
+		padding-bottom: 50px;
+	}
+	 
+p {
+	font-family: 'Carrois Gothic', sans-serif;
+	color: #fff;
+	font-size: 11px;
+}
+
+ul li {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 12px;
+		color: #22537c;
+}
+	
+a{
+	text-decoration: none;
+	color: #5698D0;
+}
+
+	a:hover {
+	color: #22537c;
+}
